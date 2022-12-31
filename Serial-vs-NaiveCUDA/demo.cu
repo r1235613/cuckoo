@@ -1,5 +1,6 @@
 #include "cuckoo-serial.hpp"
 #include "cuckoo-cuda.cuh"
+#include "cuckoo-pthread.hpp"
 #include <map>
 #include <cstdlib>
 #include <cmath>
