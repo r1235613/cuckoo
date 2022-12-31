@@ -4,6 +4,8 @@
 
 #ifndef _CUCKOO_PTHREAD_HPP_
 #define _CUCKOO_PTHREAD_HPP_
+
+#include <pthread.h>
 #include <iostream>
 #include <iomanip>
 #include <vector>
@@ -26,9 +28,11 @@
  *
  */
 template <typename T>
-class CuckooHashTable {
+class CuckooHashTablePthread {
 
 private:
+
+    size_t current_thread;
 
     /** Struct of a hash function config. */
     typedef struct {
@@ -75,10 +79,53 @@ private:
         return ((val ^ fc.rv) >> fc.ss) % _size;
     }
 
+    struct del_args{
+            int my_id;
+            bool result;
+            void *me;
+            T val;
+        };
+
+    static void *del_key(void * arg){
+        del_args *args = (del_args *)arg;
+        int my_id = args->my_id;
+        T val = args->val;
+        CuckooHashTablePthread<T> *self = (CuckooHashTablePthread<T> *)args->me;
+
+        int pos = self->do_hash(val, my_id);
+        if (self->_data[pos] == val) {
+            self->_data[pos] = EMPTY_CELL;
+            self->_pos_to_func_map[pos] = EMPTY_CELL;
+            args->result = true;
+        }
+        else
+            args->result = false;
+
+    }
+
+    struct query_args{
+        int my_id;
+        int result;
+        void *me;
+        T val;
+    };
+    static void *query_key(void * arg){
+        query_args *args = (query_args *)arg;
+        int my_id = args->my_id;
+        T val = args->val;
+        CuckooHashTablePthread<T> *self = (CuckooHashTablePthread<T> *)args->me;
+
+        int pos = self->do_hash(val, my_id);
+        if (self->_data[pos] == val)
+            args->result = pos;
+        else
+            args->result = -1;
+    }
+
 public:
 
     /** Constructor & Destructor. */
-    CuckooHashTable(const int size, const int evict_bound, const int num_funcs)
+    CuckooHashTablePthread(const int size, const int evict_bound, const int num_funcs)
             : _size(size), _evict_bound(evict_bound), _num_funcs(num_funcs) {
 
         // Allocate space for data table, map, and hash function configs.
@@ -89,7 +136,7 @@ public:
         // Generate initial hash function configs.
         gen_hash_funcs();
     };
-    ~CuckooHashTable() {
+    ~CuckooHashTablePthread() {
         delete[] _data;
         delete[] _pos_to_func_map;
         delete[] _hash_func_configs;
@@ -113,7 +160,7 @@ public:
  */
 template <typename T>
 int
-CuckooHashTable<T>::insert_val(const T val, const int depth) {
+CuckooHashTablePthread<T>::insert_val(const T val, const int depth) {
 
     // Initial conditions.
     T cur_val = val;
@@ -163,16 +210,23 @@ CuckooHashTable<T>::insert_val(const T val, const int depth) {
  */
 template <typename T>
 bool
-CuckooHashTable<T>::delete_val(const T val) {
+CuckooHashTablePthread<T>::delete_val(const T val) {
+    del_args args[_num_funcs];
+    pthread_t threads[_num_funcs];
     for (int i = 1; i <= _num_funcs; ++i) {
-        int pos = do_hash(val, i);
-        if (_data[pos] == val) {
-            _data[pos] = EMPTY_CELL;
-            _pos_to_func_map[pos] = EMPTY_CELL;
-            return true;
-        }
+        args[i].my_id = i;
+        args[i].me = this;
+        args[i].val = val;
+        args[i].result = false;
+        pthread_create(&threads[i], NULL, del_key, (void *)&args[i]);
     }
-    return false;
+    for(int i = 1; i <= _num_funcs; ++i){
+        pthread_join(threads[i], NULL);
+        if(args[i].result)
+            return true;
+    }
+    delete [] args;
+    delete [] threads;
 }
 
 
@@ -187,10 +241,18 @@ CuckooHashTable<T>::delete_val(const T val) {
  */
 template <typename T>
 bool
-CuckooHashTable<T>::lookup_val(const T val) {
+CuckooHashTablePthread<T>::lookup_val(const T val) {
+    del_args args[_num_funcs];
+    pthread_t threads[_num_funcs];
     for (int i = 1; i <= _num_funcs; ++i) {
-        int pos = do_hash(val, i);
-        if (_data[pos] == val)
+        args[i].my_id = i;
+        args[i].me = this;
+
+        pthread_create(&threads[i], NULL, query_key, (void *)&args[i]);
+    }
+    for(int i = 1; i <= _num_funcs; ++i){
+        pthread_join(threads[i], NULL);
+        if(args[i].result != -1)
             return true;
     }
     return false;
@@ -207,7 +269,7 @@ CuckooHashTable<T>::lookup_val(const T val) {
  */
 template <typename T>
 int
-CuckooHashTable<T>::rehash(const T val_in_hand, const int depth) {
+CuckooHashTablePthread<T>::rehash(const T val_in_hand, const int depth) {
 
     // If exceeds max rehashing depth, abort.
     if (depth > MAX_DEPTH)
@@ -242,7 +304,7 @@ CuckooHashTable<T>::rehash(const T val_in_hand, const int depth) {
 /** Cuckoo: print content out. */
 template <typename T>
 void
-CuckooHashTable<T>::show_content() {
+CuckooHashTablePthread<T>::show_content() {
     std::cout << "Funcs: ";
     for (int i = 1; i <= _num_funcs; ++i) {
         FuncConfig fc = _hash_func_configs[i];
