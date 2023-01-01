@@ -1,0 +1,484 @@
+Experiment 1 -->
+ t = 3, scale = 10, rep 0:  [Serial]     0 ms -  0 rehash(es) | [CUDA]   350 ms -  0 rehash(es)
+ t = 3, scale = 10, rep 1:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 10, rep 2:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 10, rep 3:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 10, rep 4:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 11, rep 0:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 11, rep 1:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 11, rep 2:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 11, rep 3:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 11, rep 4:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 12, rep 0:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 12, rep 1:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 12, rep 2:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 12, rep 3:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 12, rep 4:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 13, rep 0:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 13, rep 1:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 13, rep 2:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 13, rep 3:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 13, rep 4:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 14, rep 0:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 14, rep 1:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 14, rep 2:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 14, rep 3:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 14, rep 4:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 15, rep 0:  [Serial]     1 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 15, rep 1:  [Serial]     1 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 15, rep 2:  [Serial]     1 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 15, rep 3:  [Serial]     1 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 15, rep 4:  [Serial]     1 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 16, rep 0:  [Serial]     3 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 16, rep 1:  [Serial]     3 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 16, rep 2:  [Serial]     3 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 16, rep 3:  [Serial]     3 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 16, rep 4:  [Serial]     3 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 17, rep 0:  [Serial]     6 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 17, rep 1:  [Serial]     6 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 17, rep 2:  [Serial]     6 ms -  0 rehash(es) | [CUDA]    63 ms -  0 rehash(es)
+ t = 3, scale = 17, rep 3:  [Serial]     6 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 17, rep 4:  [Serial]     6 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 18, rep 0:  [Serial]    14 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 18, rep 1:  [Serial]    13 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 18, rep 2:  [Serial]    13 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 18, rep 3:  [Serial]    13 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 18, rep 4:  [Serial]    13 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 19, rep 0:  [Serial]    28 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 19, rep 1:  [Serial]    27 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 19, rep 2:  [Serial]    27 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 19, rep 3:  [Serial]    27 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 19, rep 4:  [Serial]    27 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 3, scale = 20, rep 0:  [Serial]    56 ms -  0 rehash(es) | [CUDA]    65 ms -  0 rehash(es)
+ t = 3, scale = 20, rep 1:  [Serial]    55 ms -  0 rehash(es) | [CUDA]   181 ms -  1 rehash(es)
+ t = 3, scale = 20, rep 2:  [Serial]   115 ms -  1 rehash(es) | [CUDA]    65 ms -  0 rehash(es)
+ t = 3, scale = 20, rep 3:  [Serial]   105 ms -  1 rehash(es) | [CUDA]    65 ms -  0 rehash(es)
+ t = 3, scale = 20, rep 4:  [Serial]    56 ms -  0 rehash(es) | [CUDA]    65 ms -  0 rehash(es)
+ t = 3, scale = 21, rep 0:  [Serial]   116 ms -  0 rehash(es) | [CUDA]    66 ms -  0 rehash(es)
+ t = 3, scale = 21, rep 1:  [Serial]   115 ms -  0 rehash(es) | [CUDA]   184 ms -  1 rehash(es)
+ t = 3, scale = 21, rep 2:  [Serial]   115 ms -  0 rehash(es) | [CUDA]    66 ms -  0 rehash(es)
+ t = 3, scale = 21, rep 3:  [Serial]   114 ms -  0 rehash(es) | [CUDA]    66 ms -  0 rehash(es)
+ t = 3, scale = 21, rep 4:  [Serial]   113 ms -  0 rehash(es) | [CUDA]    66 ms -  0 rehash(es)
+ t = 3, scale = 22, rep 0:  [Serial]   244 ms -  0 rehash(es) | [CUDA]   190 ms -  1 rehash(es)
+ t = 3, scale = 22, rep 1:  [Serial]   464 ms -  1 rehash(es) | [CUDA]    68 ms -  0 rehash(es)
+ t = 3, scale = 22, rep 2:  [Serial]   239 ms -  0 rehash(es) | [CUDA]    68 ms -  0 rehash(es)
+ t = 3, scale = 22, rep 3:  [Serial]   240 ms -  0 rehash(es) | [CUDA]   313 ms -  2 rehash(es)
+ t = 3, scale = 22, rep 4:  [Serial]   775 ms -  2 rehash(es) | [CUDA]    68 ms -  0 rehash(es)
+ t = 3, scale = 23, rep 0:  [Serial]   843 ms -  2 rehash(es) | [CUDA]   201 ms -  1 rehash(es)
+ t = 3, scale = 23, rep 1:  [Serial]  2090 ms -  5 rehash(es) | [CUDA]  1251 ms -  9 rehash(es)
+ t = 3, scale = 23, rep 2:  [Serial]   540 ms -  0 rehash(es) | [CUDA]   201 ms -  1 rehash(es)
+ t = 3, scale = 23, rep 3:  [Serial]   783 ms -  1 rehash(es) | [CUDA]   201 ms -  1 rehash(es)
+ t = 3, scale = 23, rep 4:  [Serial]   528 ms -  0 rehash(es) | [CUDA]    71 ms -  0 rehash(es)
+ t = 3, scale = 24, rep 0:  [Serial]  2251 ms -  4 rehash(es) | [CUDA]   466 ms -  2 rehash(es)
+ t = 3, scale = 24, rep 1:  [Serial]  1055 ms -  0 rehash(es) | [CUDA]  1042 ms -  6 rehash(es)
+ t = 3, scale = 24, rep 2:  [Serial]  1073 ms -  0 rehash(es) | [CUDA]   901 ms -  5 rehash(es)
+ t = 3, scale = 24, rep 3:  [Serial]  1060 ms -  0 rehash(es) | [CUDA]  1503 ms -  9 rehash(es)
+ t = 3, scale = 24, rep 4:  [Serial]  2190 ms -  3 rehash(es) | [CUDA]   772 ms -  4 rehash(es)
+ t = 4, scale = 10, rep 0:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    84 ms -  0 rehash(es)
+ t = 4, scale = 10, rep 1:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 10, rep 2:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 10, rep 3:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 10, rep 4:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 11, rep 0:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 11, rep 1:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 11, rep 2:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 11, rep 3:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 11, rep 4:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 12, rep 0:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 12, rep 1:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 12, rep 2:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 12, rep 3:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 12, rep 4:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    84 ms -  0 rehash(es)
+ t = 4, scale = 13, rep 0:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 13, rep 1:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 13, rep 2:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 13, rep 3:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 13, rep 4:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 14, rep 0:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 14, rep 1:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 14, rep 2:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    84 ms -  0 rehash(es)
+ t = 4, scale = 14, rep 3:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 14, rep 4:  [Serial]     0 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 15, rep 0:  [Serial]     1 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 15, rep 1:  [Serial]     1 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 15, rep 2:  [Serial]     1 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 15, rep 3:  [Serial]     1 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 15, rep 4:  [Serial]     1 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 16, rep 0:  [Serial]     3 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 16, rep 1:  [Serial]     3 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 16, rep 2:  [Serial]     3 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 16, rep 3:  [Serial]     3 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 16, rep 4:  [Serial]     3 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 17, rep 0:  [Serial]     6 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 17, rep 1:  [Serial]     7 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 17, rep 2:  [Serial]     6 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 17, rep 3:  [Serial]     7 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 17, rep 4:  [Serial]     7 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 18, rep 0:  [Serial]    13 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 18, rep 1:  [Serial]    14 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 18, rep 2:  [Serial]    13 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 18, rep 3:  [Serial]    13 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 18, rep 4:  [Serial]    14 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 19, rep 0:  [Serial]    27 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 19, rep 1:  [Serial]    27 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 19, rep 2:  [Serial]    27 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 19, rep 3:  [Serial]    28 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 19, rep 4:  [Serial]    28 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 20, rep 0:  [Serial]    56 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 20, rep 1:  [Serial]    56 ms -  0 rehash(es) | [CUDA]    86 ms -  0 rehash(es)
+ t = 4, scale = 20, rep 2:  [Serial]    56 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 20, rep 3:  [Serial]    56 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 20, rep 4:  [Serial]    56 ms -  0 rehash(es) | [CUDA]    85 ms -  0 rehash(es)
+ t = 4, scale = 21, rep 0:  [Serial]   114 ms -  0 rehash(es) | [CUDA]    86 ms -  0 rehash(es)
+ t = 4, scale = 21, rep 1:  [Serial]   115 ms -  0 rehash(es) | [CUDA]    86 ms -  0 rehash(es)
+ t = 4, scale = 21, rep 2:  [Serial]   114 ms -  0 rehash(es) | [CUDA]    86 ms -  0 rehash(es)
+ t = 4, scale = 21, rep 3:  [Serial]   114 ms -  0 rehash(es) | [CUDA]    86 ms -  0 rehash(es)
+ t = 4, scale = 21, rep 4:  [Serial]   114 ms -  0 rehash(es) | [CUDA]    86 ms -  0 rehash(es)
+ t = 4, scale = 22, rep 0:  [Serial]   245 ms -  0 rehash(es) | [CUDA]    89 ms -  0 rehash(es)
+ t = 4, scale = 22, rep 1:  [Serial]   239 ms -  0 rehash(es) | [CUDA]    89 ms -  0 rehash(es)
+ t = 4, scale = 22, rep 2:  [Serial]   240 ms -  0 rehash(es) | [CUDA]    89 ms -  0 rehash(es)
+ t = 4, scale = 22, rep 3:  [Serial]   240 ms -  0 rehash(es) | [CUDA]    89 ms -  0 rehash(es)
+ t = 4, scale = 22, rep 4:  [Serial]   245 ms -  0 rehash(es) | [CUDA]    89 ms -  0 rehash(es)
+ t = 4, scale = 23, rep 0:  [Serial]   401 ms -  0 rehash(es) | [CUDA]    92 ms -  0 rehash(es)
+ t = 4, scale = 23, rep 1:  [Serial]   403 ms -  0 rehash(es) | [CUDA]    92 ms -  0 rehash(es)
+ t = 4, scale = 23, rep 2:  [Serial]   534 ms -  0 rehash(es) | [CUDA]    92 ms -  0 rehash(es)
+ t = 4, scale = 23, rep 3:  [Serial]   543 ms -  0 rehash(es) | [CUDA]    92 ms -  0 rehash(es)
+ t = 4, scale = 23, rep 4:  [Serial]   401 ms -  0 rehash(es) | [CUDA]    92 ms -  0 rehash(es)
+ t = 4, scale = 24, rep 0:  [Serial]  1043 ms -  0 rehash(es) | [CUDA]   200 ms -  0 rehash(es)
+ t = 4, scale = 24, rep 1:  [Serial]  1376 ms -  1 rehash(es) | [CUDA]   198 ms -  0 rehash(es)
+ t = 4, scale = 24, rep 2:  [Serial]  1055 ms -  0 rehash(es) | [CUDA]   199 ms -  0 rehash(es)
+ t = 4, scale = 24, rep 3:  [Serial]  1063 ms -  0 rehash(es) | [CUDA]   200 ms -  0 rehash(es)
+ t = 4, scale = 24, rep 4:  [Serial]  1040 ms -  0 rehash(es) | [CUDA]   199 ms -  0 rehash(es)
+Experiment 2 -->
+ t = 3, percentile =  0, rep 0:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  0, rep 1:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  0, rep 2:  [Serial]     0 ms | [CUDA]    46 ms
+ t = 3, percentile =  0, rep 3:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  0, rep 4:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  1, rep 0:  [Serial]     0 ms | [CUDA]    47 ms
+ t = 3, percentile =  1, rep 1:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  1, rep 2:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  1, rep 3:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  1, rep 4:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  2, rep 0:  [Serial]     0 ms | [CUDA]    51 ms
+ t = 3, percentile =  2, rep 1:  [Serial]     0 ms | [CUDA]    51 ms
+ t = 3, percentile =  2, rep 2:  [Serial]     0 ms | [CUDA]    51 ms
+ t = 3, percentile =  2, rep 3:  [Serial]     0 ms | [CUDA]    51 ms
+ t = 3, percentile =  2, rep 4:  [Serial]     0 ms | [CUDA]    51 ms
+ t = 3, percentile =  3, rep 0:  [Serial]     0 ms | [CUDA]    52 ms
+ t = 3, percentile =  3, rep 1:  [Serial]     0 ms | [CUDA]    46 ms
+ t = 3, percentile =  3, rep 2:  [Serial]     0 ms | [CUDA]    52 ms
+ t = 3, percentile =  3, rep 3:  [Serial]     0 ms | [CUDA]    51 ms
+ t = 3, percentile =  3, rep 4:  [Serial]     0 ms | [CUDA]    51 ms
+ t = 3, percentile =  4, rep 0:  [Serial]     0 ms | [CUDA]    52 ms
+ t = 3, percentile =  4, rep 1:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  4, rep 2:  [Serial]     0 ms | [CUDA]    52 ms
+ t = 3, percentile =  4, rep 3:  [Serial]     0 ms | [CUDA]    52 ms
+ t = 3, percentile =  4, rep 4:  [Serial]     0 ms | [CUDA]    52 ms
+ t = 3, percentile =  5, rep 0:  [Serial]     0 ms | [CUDA]    53 ms
+ t = 3, percentile =  5, rep 1:  [Serial]     0 ms | [CUDA]    53 ms
+ t = 3, percentile =  5, rep 2:  [Serial]     0 ms | [CUDA]    53 ms
+ t = 3, percentile =  5, rep 3:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  5, rep 4:  [Serial]     0 ms | [CUDA]    53 ms
+ t = 3, percentile =  6, rep 0:  [Serial]     0 ms | [CUDA]    53 ms
+ t = 3, percentile =  6, rep 1:  [Serial]     0 ms | [CUDA]    53 ms
+ t = 3, percentile =  6, rep 2:  [Serial]     0 ms | [CUDA]    53 ms
+ t = 3, percentile =  6, rep 3:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  6, rep 4:  [Serial]     0 ms | [CUDA]    53 ms
+ t = 3, percentile =  7, rep 0:  [Serial]     0 ms | [CUDA]    54 ms
+ t = 3, percentile =  7, rep 1:  [Serial]     0 ms | [CUDA]    54 ms
+ t = 3, percentile =  7, rep 2:  [Serial]     0 ms | [CUDA]    54 ms
+ t = 3, percentile =  7, rep 3:  [Serial]     0 ms | [CUDA]    53 ms
+ t = 3, percentile =  7, rep 4:  [Serial]     0 ms | [CUDA]    50 ms
+ t = 3, percentile =  8, rep 0:  [Serial]     0 ms | [CUDA]    54 ms
+ t = 3, percentile =  8, rep 1:  [Serial]     0 ms | [CUDA]    54 ms
+ t = 3, percentile =  8, rep 2:  [Serial]     0 ms | [CUDA]    54 ms
+ t = 3, percentile =  8, rep 3:  [Serial]     0 ms | [CUDA]    54 ms
+ t = 3, percentile =  8, rep 4:  [Serial]     0 ms | [CUDA]    54 ms
+ t = 3, percentile =  9, rep 0:  [Serial]     0 ms | [CUDA]    55 ms
+ t = 3, percentile =  9, rep 1:  [Serial]     0 ms | [CUDA]    55 ms
+ t = 3, percentile =  9, rep 2:  [Serial]     0 ms | [CUDA]    55 ms
+ t = 3, percentile =  9, rep 3:  [Serial]     0 ms | [CUDA]    55 ms
+ t = 3, percentile =  9, rep 4:  [Serial]     0 ms | [CUDA]    49 ms
+ t = 3, percentile = 10, rep 0:  [Serial]     0 ms | [CUDA]    56 ms
+ t = 3, percentile = 10, rep 1:  [Serial]     0 ms | [CUDA]    56 ms
+ t = 3, percentile = 10, rep 2:  [Serial]     0 ms | [CUDA]    53 ms
+ t = 3, percentile = 10, rep 3:  [Serial]     0 ms | [CUDA]    55 ms
+ t = 3, percentile = 10, rep 4:  [Serial]     0 ms | [CUDA]    56 ms
+ t = 4, percentile =  0, rep 0:  [Serial]     0 ms | [CUDA]    63 ms
+ t = 4, percentile =  0, rep 1:  [Serial]     0 ms | [CUDA]    62 ms
+ t = 4, percentile =  0, rep 2:  [Serial]     0 ms | [CUDA]    63 ms
+ t = 4, percentile =  0, rep 3:  [Serial]     0 ms | [CUDA]    63 ms
+ t = 4, percentile =  0, rep 4:  [Serial]     0 ms | [CUDA]    63 ms
+ t = 4, percentile =  1, rep 0:  [Serial]     0 ms | [CUDA]    63 ms
+ t = 4, percentile =  1, rep 1:  [Serial]     0 ms | [CUDA]    64 ms
+ t = 4, percentile =  1, rep 2:  [Serial]     0 ms | [CUDA]    64 ms
+ t = 4, percentile =  1, rep 3:  [Serial]     0 ms | [CUDA]    64 ms
+ t = 4, percentile =  1, rep 4:  [Serial]     0 ms | [CUDA]    64 ms
+ t = 4, percentile =  2, rep 0:  [Serial]     0 ms | [CUDA]    64 ms
+ t = 4, percentile =  2, rep 1:  [Serial]     0 ms | [CUDA]    65 ms
+ t = 4, percentile =  2, rep 2:  [Serial]     0 ms | [CUDA]    65 ms
+ t = 4, percentile =  2, rep 3:  [Serial]     0 ms | [CUDA]    65 ms
+ t = 4, percentile =  2, rep 4:  [Serial]     0 ms | [CUDA]    65 ms
+ t = 4, percentile =  3, rep 0:  [Serial]     0 ms | [CUDA]    66 ms
+ t = 4, percentile =  3, rep 1:  [Serial]     0 ms | [CUDA]    65 ms
+ t = 4, percentile =  3, rep 2:  [Serial]     0 ms | [CUDA]    65 ms
+ t = 4, percentile =  3, rep 3:  [Serial]     0 ms | [CUDA]    66 ms
+ t = 4, percentile =  3, rep 4:  [Serial]     0 ms | [CUDA]    65 ms
+ t = 4, percentile =  4, rep 0:  [Serial]     0 ms | [CUDA]    66 ms
+ t = 4, percentile =  4, rep 1:  [Serial]     0 ms | [CUDA]    66 ms
+ t = 4, percentile =  4, rep 2:  [Serial]     0 ms | [CUDA]    66 ms
+ t = 4, percentile =  4, rep 3:  [Serial]     0 ms | [CUDA]    66 ms
+ t = 4, percentile =  4, rep 4:  [Serial]     0 ms | [CUDA]    66 ms
+ t = 4, percentile =  5, rep 0:  [Serial]     0 ms | [CUDA]    67 ms
+ t = 4, percentile =  5, rep 1:  [Serial]     0 ms | [CUDA]    67 ms
+ t = 4, percentile =  5, rep 2:  [Serial]     0 ms | [CUDA]    67 ms
+ t = 4, percentile =  5, rep 3:  [Serial]     0 ms | [CUDA]    67 ms
+ t = 4, percentile =  5, rep 4:  [Serial]     0 ms | [CUDA]    67 ms
+ t = 4, percentile =  6, rep 0:  [Serial]     0 ms | [CUDA]    68 ms
+ t = 4, percentile =  6, rep 1:  [Serial]     0 ms | [CUDA]    68 ms
+ t = 4, percentile =  6, rep 2:  [Serial]     0 ms | [CUDA]    68 ms
+ t = 4, percentile =  6, rep 3:  [Serial]     0 ms | [CUDA]    68 ms
+ t = 4, percentile =  6, rep 4:  [Serial]     0 ms | [CUDA]    68 ms
+ t = 4, percentile =  7, rep 0:  [Serial]     0 ms | [CUDA]    69 ms
+ t = 4, percentile =  7, rep 1:  [Serial]     0 ms | [CUDA]    69 ms
+ t = 4, percentile =  7, rep 2:  [Serial]     0 ms | [CUDA]    69 ms
+ t = 4, percentile =  7, rep 3:  [Serial]     0 ms | [CUDA]    69 ms
+ t = 4, percentile =  7, rep 4:  [Serial]     0 ms | [CUDA]    69 ms
+ t = 4, percentile =  8, rep 0:  [Serial]     0 ms | [CUDA]    70 ms
+ t = 4, percentile =  8, rep 1:  [Serial]     0 ms | [CUDA]    70 ms
+ t = 4, percentile =  8, rep 2:  [Serial]     0 ms | [CUDA]    70 ms
+ t = 4, percentile =  8, rep 3:  [Serial]     0 ms | [CUDA]    70 ms
+ t = 4, percentile =  8, rep 4:  [Serial]     0 ms | [CUDA]    70 ms
+ t = 4, percentile =  9, rep 0:  [Serial]     0 ms | [CUDA]    71 ms
+ t = 4, percentile =  9, rep 1:  [Serial]     0 ms | [CUDA]    71 ms
+ t = 4, percentile =  9, rep 2:  [Serial]     0 ms | [CUDA]    71 ms
+ t = 4, percentile =  9, rep 3:  [Serial]     0 ms | [CUDA]    71 ms
+ t = 4, percentile =  9, rep 4:  [Serial]     0 ms | [CUDA]    71 ms
+ t = 4, percentile = 10, rep 0:  [Serial]     0 ms | [CUDA]    72 ms
+ t = 4, percentile = 10, rep 1:  [Serial]     0 ms | [CUDA]    72 ms
+ t = 4, percentile = 10, rep 2:  [Serial]     0 ms | [CUDA]    72 ms
+ t = 4, percentile = 10, rep 3:  [Serial]     0 ms | [CUDA]    72 ms
+ t = 4, percentile = 10, rep 4:  [Serial]     0 ms | [CUDA]    72 ms
+Experiment 3 -->
+ t = 3, ratio = 1.90, rep 0:  [Serial]  1075 ms -  0 rehash(es) | [CUDA]   176 ms -  0 rehash(es)
+ t = 3, ratio = 1.90, rep 1:  [Serial]  1064 ms -  0 rehash(es) | [CUDA]    71 ms -  0 rehash(es)
+ t = 3, ratio = 1.90, rep 2:  [Serial]  1080 ms -  0 rehash(es) | [CUDA]    71 ms -  0 rehash(es)
+ t = 3, ratio = 1.90, rep 3:  [Serial]  1080 ms -  0 rehash(es) | [CUDA]    71 ms -  0 rehash(es)
+ t = 3, ratio = 1.90, rep 4:  [Serial]  1081 ms -  0 rehash(es) | [CUDA]   345 ms -  2 rehash(es)
+ t = 3, ratio = 1.80, rep 0:  [Serial]  1121 ms -  0 rehash(es) | [CUDA]    69 ms -  0 rehash(es)
+ t = 3, ratio = 1.80, rep 1:  [Serial]  1215 ms -  1 rehash(es) | [CUDA]    69 ms -  0 rehash(es)
+ t = 3, ratio = 1.80, rep 2:  [Serial]  1129 ms -  0 rehash(es) | [CUDA]    68 ms -  0 rehash(es)
+ t = 3, ratio = 1.80, rep 3:  [Serial]  1134 ms -  0 rehash(es) | [CUDA]   199 ms -  1 rehash(es)
+ t = 3, ratio = 1.80, rep 4:  [Serial]  1125 ms -  0 rehash(es) | [CUDA]    69 ms -  0 rehash(es)
+ t = 3, ratio = 1.70, rep 0:  [Serial]  1341 ms -  1 rehash(es) | [CUDA]    66 ms -  0 rehash(es)
+ t = 3, ratio = 1.70, rep 1:  [Serial]  1187 ms -  0 rehash(es) | [CUDA]    66 ms -  0 rehash(es)
+ t = 3, ratio = 1.70, rep 2:  [Serial]  1174 ms -  0 rehash(es) | [CUDA]    66 ms -  0 rehash(es)
+ t = 3, ratio = 1.70, rep 3:  [Serial]  1184 ms -  0 rehash(es) | [CUDA]    66 ms -  0 rehash(es)
+ t = 3, ratio = 1.70, rep 4:  [Serial]  1214 ms -  0 rehash(es) | [CUDA]    66 ms -  0 rehash(es)
+ t = 3, ratio = 1.60, rep 0:  [Serial]  1267 ms -  0 rehash(es) | [CUDA]    63 ms -  0 rehash(es)
+ t = 3, ratio = 1.60, rep 1:  [Serial]  1569 ms -  2 rehash(es) | [CUDA]    63 ms -  0 rehash(es)
+ t = 3, ratio = 1.60, rep 2:  [Serial]  1668 ms -  3 rehash(es) | [CUDA]   304 ms -  2 rehash(es)
+ t = 3, ratio = 1.60, rep 3:  [Serial]  1250 ms -  0 rehash(es) | [CUDA]   183 ms -  1 rehash(es)
+ t = 3, ratio = 1.60, rep 4:  [Serial]  1419 ms -  1 rehash(es) | [CUDA]    63 ms -  0 rehash(es)
+ t = 3, ratio = 1.50, rep 0:  [Serial]  2587 ms -  3 rehash(es) | [CUDA]   291 ms -  2 rehash(es)
+ t = 3, ratio = 1.50, rep 1:  [Serial]  3000 ms -  2 rehash(es) | [CUDA]    61 ms -  0 rehash(es)
+ t = 3, ratio = 1.50, rep 2:  [Serial]  1391 ms -  0 rehash(es) | [CUDA]    60 ms -  0 rehash(es)
+ t = 3, ratio = 1.50, rep 3:  [Serial]  1388 ms -  0 rehash(es) | [CUDA]    60 ms -  0 rehash(es)
+ t = 3, ratio = 1.50, rep 4:  [Serial]  1357 ms -  0 rehash(es) | [CUDA]   405 ms -  3 rehash(es)
+ t = 3, ratio = 1.40, rep 0:  [Serial]  1487 ms -  0 rehash(es) | [CUDA]    58 ms -  0 rehash(es)
+ t = 3, ratio = 1.40, rep 1:  [Serial]  1687 ms -  1 rehash(es) | [CUDA]   168 ms -  1 rehash(es)
+ t = 3, ratio = 1.40, rep 2:  [Serial]  1637 ms -  1 rehash(es) | [CUDA]   168 ms -  1 rehash(es)
+ t = 3, ratio = 1.40, rep 3:  [Serial]  1487 ms -  0 rehash(es) | [CUDA]    58 ms -  0 rehash(es)
+ t = 3, ratio = 1.40, rep 4:  [Serial]  2582 ms -  1 rehash(es) | [CUDA]   167 ms -  1 rehash(es)
+ t = 3, ratio = 1.30, rep 0:  [Serial]  1748 ms -  0 rehash(es) | [CUDA]    56 ms -  0 rehash(es)
+ t = 3, ratio = 1.30, rep 1:  [Serial]  1723 ms -  0 rehash(es) | [CUDA]    56 ms -  0 rehash(es)
+ t = 3, ratio = 1.30, rep 2:  [Serial]  1775 ms -  0 rehash(es) | [CUDA]    56 ms -  0 rehash(es)
+ t = 3, ratio = 1.30, rep 3:  [Serial]  1712 ms -  0 rehash(es) | [CUDA]    56 ms -  0 rehash(es)
+ t = 3, ratio = 1.30, rep 4:  [Serial]  1716 ms -  0 rehash(es) | [CUDA]    56 ms -  0 rehash(es)
+ t = 3, ratio = 1.20, rep 0:  [Serial]  5816 ms -  1 rehash(es) | [CUDA]    53 ms -  0 rehash(es)
+ t = 3, ratio = 1.20, rep 1:  [Serial]  2178 ms -  0 rehash(es) | [CUDA]   153 ms -  1 rehash(es)
+ t = 3, ratio = 1.20, rep 2:  [Serial]  4271 ms -  2 rehash(es) | [CUDA]   156 ms -  1 rehash(es)
+ t = 3, ratio = 1.20, rep 3:  [Serial]  7584 ms -  3 rehash(es) | [CUDA]    53 ms -  0 rehash(es)
+ t = 3, ratio = 1.20, rep 4:  [Serial]  7868 ms -  3 rehash(es) | [CUDA]    53 ms -  0 rehash(es)
+ t = 3, ratio = 1.10, rep 0:  [CUDA]    51 ms -  0 rehash(es)
+ t = 3, ratio = 1.10, rep 1:  [CUDA]   146 ms -  1 rehash(es)
+ t = 3, ratio = 1.10, rep 2:  [CUDA]    51 ms -  0 rehash(es)
+ t = 3, ratio = 1.10, rep 3:  [CUDA]   145 ms -  1 rehash(es)
+ t = 3, ratio = 1.10, rep 4:  [CUDA]   145 ms -  1 rehash(es)
+ t = 3, ratio = 1.05, rep 0:  [CUDA]   142 ms -  1 rehash(es)
+ t = 3, ratio = 1.05, rep 1:  [CUDA]    49 ms -  0 rehash(es)
+ t = 3, ratio = 1.05, rep 2:  [CUDA]    49 ms -  0 rehash(es)
+ t = 3, ratio = 1.05, rep 3:  [CUDA]   142 ms -  1 rehash(es)
+ t = 3, ratio = 1.05, rep 4:  [CUDA]    49 ms -  0 rehash(es)
+ t = 3, ratio = 1.02, rep 0:  [CUDA]    49 ms -  0 rehash(es)
+ t = 3, ratio = 1.02, rep 1:  [CUDA]    49 ms -  0 rehash(es)
+ t = 3, ratio = 1.02, rep 2:  [CUDA]    49 ms -  0 rehash(es)
+ t = 3, ratio = 1.02, rep 3:  [CUDA]    49 ms -  0 rehash(es)
+ t = 3, ratio = 1.02, rep 4:  [CUDA]    49 ms -  0 rehash(es)
+ t = 3, ratio = 1.01, rep 0:  [CUDA]   319 ms -  3 rehash(es)
+ t = 3, ratio = 1.01, rep 1:  [CUDA]   138 ms -  1 rehash(es)
+ t = 3, ratio = 1.01, rep 2:  [CUDA]    48 ms -  0 rehash(es)
+ t = 3, ratio = 1.01, rep 3:  [CUDA]    48 ms -  0 rehash(es)
+ t = 3, ratio = 1.01, rep 4:  [CUDA]    48 ms -  0 rehash(es)
+ t = 4, ratio = 1.90, rep 0:  [Serial]  1056 ms -  0 rehash(es) | [CUDA]    97 ms -  0 rehash(es)
+ t = 4, ratio = 1.90, rep 1:  [Serial]  1057 ms -  0 rehash(es) | [CUDA]    97 ms -  0 rehash(es)
+ t = 4, ratio = 1.90, rep 2:  [Serial]  1054 ms -  0 rehash(es) | [CUDA]    97 ms -  0 rehash(es)
+ t = 4, ratio = 1.90, rep 3:  [Serial]  1064 ms -  0 rehash(es) | [CUDA]    97 ms -  0 rehash(es)
+ t = 4, ratio = 1.90, rep 4:  [Serial]  1051 ms -  0 rehash(es) | [CUDA]    97 ms -  0 rehash(es)
+ t = 4, ratio = 1.80, rep 0:  [Serial]  1416 ms -  1 rehash(es) | [CUDA]    92 ms -  0 rehash(es)
+ t = 4, ratio = 1.80, rep 1:  [Serial]  1090 ms -  0 rehash(es) | [CUDA]    92 ms -  0 rehash(es)
+ t = 4, ratio = 1.80, rep 2:  [Serial]  1084 ms -  0 rehash(es) | [CUDA]    92 ms -  0 rehash(es)
+ t = 4, ratio = 1.80, rep 3:  [Serial]  1124 ms -  0 rehash(es) | [CUDA]    92 ms -  0 rehash(es)
+ t = 4, ratio = 1.80, rep 4:  [Serial]  1086 ms -  0 rehash(es) | [CUDA]    92 ms -  0 rehash(es)
+ t = 4, ratio = 1.70, rep 0:  [Serial]  1409 ms -  1 rehash(es) | [CUDA]    88 ms -  0 rehash(es)
+ t = 4, ratio = 1.70, rep 1:  [Serial]  1492 ms -  1 rehash(es) | [CUDA]    88 ms -  0 rehash(es)
+ t = 4, ratio = 1.70, rep 2:  [Serial]  1298 ms -  1 rehash(es) | [CUDA]    88 ms -  0 rehash(es)
+ t = 4, ratio = 1.70, rep 3:  [Serial]  1263 ms -  1 rehash(es) | [CUDA]   245 ms -  1 rehash(es)
+ t = 4, ratio = 1.70, rep 4:  [Serial]  1128 ms -  0 rehash(es) | [CUDA]    88 ms -  0 rehash(es)
+ t = 4, ratio = 1.60, rep 0:  [Serial]  1176 ms -  0 rehash(es) | [CUDA]    84 ms -  0 rehash(es)
+ t = 4, ratio = 1.60, rep 1:  [Serial]  1176 ms -  0 rehash(es) | [CUDA]    84 ms -  0 rehash(es)
+ t = 4, ratio = 1.60, rep 2:  [Serial]  1180 ms -  0 rehash(es) | [CUDA]    84 ms -  0 rehash(es)
+ t = 4, ratio = 1.60, rep 3:  [Serial]  1179 ms -  0 rehash(es) | [CUDA]    84 ms -  0 rehash(es)
+ t = 4, ratio = 1.60, rep 4:  [Serial]  1174 ms -  0 rehash(es) | [CUDA]    84 ms -  0 rehash(es)
+ t = 4, ratio = 1.50, rep 0:  [Serial]  1264 ms -  0 rehash(es) | [CUDA]    75 ms -  0 rehash(es)
+ t = 4, ratio = 1.50, rep 1:  [Serial]  1250 ms -  0 rehash(es) | [CUDA]    75 ms -  0 rehash(es)
+ t = 4, ratio = 1.50, rep 2:  [Serial]  1256 ms -  0 rehash(es) | [CUDA]    74 ms -  0 rehash(es)
+ t = 4, ratio = 1.50, rep 3:  [Serial]  1245 ms -  0 rehash(es) | [CUDA]    74 ms -  0 rehash(es)
+ t = 4, ratio = 1.50, rep 4:  [Serial]  1256 ms -  0 rehash(es) | [CUDA]    74 ms -  0 rehash(es)
+ t = 4, ratio = 1.40, rep 0:  [Serial]  1330 ms -  0 rehash(es) | [CUDA]    71 ms -  0 rehash(es)
+ t = 4, ratio = 1.40, rep 1:  [Serial]  1327 ms -  0 rehash(es) | [CUDA]    71 ms -  0 rehash(es)
+ t = 4, ratio = 1.40, rep 2:  [Serial]  1329 ms -  0 rehash(es) | [CUDA]    71 ms -  0 rehash(es)
+ t = 4, ratio = 1.40, rep 3:  [Serial]  1337 ms -  0 rehash(es) | [CUDA]    71 ms -  0 rehash(es)
+ t = 4, ratio = 1.40, rep 4:  [Serial]  1319 ms -  0 rehash(es) | [CUDA]   206 ms -  1 rehash(es)
+ t = 4, ratio = 1.30, rep 0:  [Serial]  1454 ms -  0 rehash(es) | [CUDA]    67 ms -  0 rehash(es)
+ t = 4, ratio = 1.30, rep 1:  [Serial]  1464 ms -  0 rehash(es) | [CUDA]    67 ms -  0 rehash(es)
+ t = 4, ratio = 1.30, rep 2:  [Serial]  1581 ms -  0 rehash(es) | [CUDA]    67 ms -  0 rehash(es)
+ t = 4, ratio = 1.30, rep 3:  [Serial]  1461 ms -  0 rehash(es) | [CUDA]    67 ms -  0 rehash(es)
+ t = 4, ratio = 1.30, rep 4:  [Serial]  1462 ms -  0 rehash(es) | [CUDA]    67 ms -  0 rehash(es)
+ t = 4, ratio = 1.20, rep 0:  [Serial]  1689 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 4, ratio = 1.20, rep 1:  [Serial]  1688 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 4, ratio = 1.20, rep 2:  [Serial]  1997 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 4, ratio = 1.20, rep 3:  [Serial]  1737 ms -  0 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 4, ratio = 1.20, rep 4:  [Serial]  1877 ms -  1 rehash(es) | [CUDA]    64 ms -  0 rehash(es)
+ t = 4, ratio = 1.10, rep 0:  [CUDA]    60 ms -  0 rehash(es)
+ t = 4, ratio = 1.10, rep 1:  [CUDA]    60 ms -  0 rehash(es)
+ t = 4, ratio = 1.10, rep 2:  [CUDA]    60 ms -  0 rehash(es)
+ t = 4, ratio = 1.10, rep 3:  [CUDA]    60 ms -  0 rehash(es)
+ t = 4, ratio = 1.10, rep 4:  [CUDA]    60 ms -  0 rehash(es)
+ t = 4, ratio = 1.05, rep 0:  [CUDA]    58 ms -  0 rehash(es)
+ t = 4, ratio = 1.05, rep 1:  [CUDA]    58 ms -  0 rehash(es)
+ t = 4, ratio = 1.05, rep 2:  [CUDA]    58 ms -  0 rehash(es)
+ t = 4, ratio = 1.05, rep 3:  [CUDA]    58 ms -  0 rehash(es)
+ t = 4, ratio = 1.05, rep 4:  [CUDA]    58 ms -  0 rehash(es)
+ t = 4, ratio = 1.02, rep 0:  [CUDA]   165 ms -  1 rehash(es)
+ t = 4, ratio = 1.02, rep 1:  [CUDA]    57 ms -  0 rehash(es)
+ t = 4, ratio = 1.02, rep 2:  [CUDA]    57 ms -  0 rehash(es)
+ t = 4, ratio = 1.02, rep 3:  [CUDA]    57 ms -  0 rehash(es)
+ t = 4, ratio = 1.02, rep 4:  [CUDA]    57 ms -  0 rehash(es)
+ t = 4, ratio = 1.01, rep 0:  [CUDA]    57 ms -  0 rehash(es)
+ t = 4, ratio = 1.01, rep 1:  [CUDA]   164 ms -  1 rehash(es)
+ t = 4, ratio = 1.01, rep 2:  [CUDA]    57 ms -  0 rehash(es)
+ t = 4, ratio = 1.01, rep 3:  [CUDA]    57 ms -  0 rehash(es)
+ t = 4, ratio = 1.01, rep 4:  [CUDA]   165 ms -  1 rehash(es)
+Experiment 4 -->
+ t = 3, bound =  1 log n, rep 0:  [CUDA]   160 ms -  0 rehash(es)
+ t = 3, bound =  1 log n, rep 1:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  1 log n, rep 2:  [CUDA]   167 ms -  1 rehash(es)
+ t = 3, bound =  1 log n, rep 3:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  1 log n, rep 4:  [CUDA]   168 ms -  1 rehash(es)
+ t = 3, bound =  2 log n, rep 0:  [CUDA]   167 ms -  1 rehash(es)
+ t = 3, bound =  2 log n, rep 1:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  2 log n, rep 2:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  2 log n, rep 3:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  2 log n, rep 4:  [CUDA]   277 ms -  2 rehash(es)
+ t = 3, bound =  3 log n, rep 0:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  3 log n, rep 1:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  3 log n, rep 2:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  3 log n, rep 3:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  3 log n, rep 4:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  4 log n, rep 0:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  4 log n, rep 1:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  4 log n, rep 2:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  4 log n, rep 3:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  4 log n, rep 4:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  5 log n, rep 0:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  5 log n, rep 1:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  5 log n, rep 2:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  5 log n, rep 3:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  5 log n, rep 4:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  6 log n, rep 0:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  6 log n, rep 1:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  6 log n, rep 2:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  6 log n, rep 3:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  6 log n, rep 4:  [CUDA]   277 ms -  2 rehash(es)
+ t = 3, bound =  7 log n, rep 0:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  7 log n, rep 1:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  7 log n, rep 2:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  7 log n, rep 3:  [CUDA]   167 ms -  1 rehash(es)
+ t = 3, bound =  7 log n, rep 4:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  8 log n, rep 0:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  8 log n, rep 1:  [CUDA]   277 ms -  2 rehash(es)
+ t = 3, bound =  8 log n, rep 2:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  8 log n, rep 3:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  8 log n, rep 4:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  9 log n, rep 0:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  9 log n, rep 1:  [CUDA]   168 ms -  1 rehash(es)
+ t = 3, bound =  9 log n, rep 2:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  9 log n, rep 3:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound =  9 log n, rep 4:  [CUDA]   170 ms -  1 rehash(es)
+ t = 3, bound = 10 log n, rep 0:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound = 10 log n, rep 1:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound = 10 log n, rep 2:  [CUDA]    58 ms -  0 rehash(es)
+ t = 3, bound = 10 log n, rep 3:  [CUDA]   168 ms -  1 rehash(es)
+ t = 3, bound = 10 log n, rep 4:  [CUDA]    58 ms -  0 rehash(es)
+ t = 4, bound =  1 log n, rep 0:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  1 log n, rep 1:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  1 log n, rep 2:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  1 log n, rep 3:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  1 log n, rep 4:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  2 log n, rep 0:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  2 log n, rep 1:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  2 log n, rep 2:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  2 log n, rep 3:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  2 log n, rep 4:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  3 log n, rep 0:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  3 log n, rep 1:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  3 log n, rep 2:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  3 log n, rep 3:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  3 log n, rep 4:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  4 log n, rep 0:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  4 log n, rep 1:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  4 log n, rep 2:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  4 log n, rep 3:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  4 log n, rep 4:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  5 log n, rep 0:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  5 log n, rep 1:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  5 log n, rep 2:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  5 log n, rep 3:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  5 log n, rep 4:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  6 log n, rep 0:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  6 log n, rep 1:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  6 log n, rep 2:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  6 log n, rep 3:  [CUDA]   206 ms -  1 rehash(es)
+ t = 4, bound =  6 log n, rep 4:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  7 log n, rep 0:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  7 log n, rep 1:  [CUDA]   207 ms -  1 rehash(es)
+ t = 4, bound =  7 log n, rep 2:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  7 log n, rep 3:  [CUDA]   206 ms -  1 rehash(es)
+ t = 4, bound =  7 log n, rep 4:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  8 log n, rep 0:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  8 log n, rep 1:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  8 log n, rep 2:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  8 log n, rep 3:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  8 log n, rep 4:  [CUDA]   206 ms -  1 rehash(es)
+ t = 4, bound =  9 log n, rep 0:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  9 log n, rep 1:  [CUDA]   207 ms -  1 rehash(es)
+ t = 4, bound =  9 log n, rep 2:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  9 log n, rep 3:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound =  9 log n, rep 4:  [CUDA]   207 ms -  1 rehash(es)
+ t = 4, bound = 10 log n, rep 0:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound = 10 log n, rep 1:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound = 10 log n, rep 2:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound = 10 log n, rep 3:  [CUDA]    71 ms -  0 rehash(es)
+ t = 4, bound = 10 log n, rep 4:  [CUDA]    71 ms -  0 rehash(es)
