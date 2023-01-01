@@ -100,7 +100,7 @@ private:
         }
         else
             args->result = false;
-
+        return NULL;
     }
 
     struct query_args{
@@ -120,6 +120,7 @@ private:
             args->result = pos;
         else
             args->result = -1;
+        return NULL;
     }
 
 public:
@@ -211,8 +212,8 @@ CuckooHashTablePthread<T>::insert_val(const T val, const int depth) {
 template <typename T>
 bool
 CuckooHashTablePthread<T>::delete_val(const T val) {
-    del_args args[_num_funcs];
-    pthread_t threads[_num_funcs];
+    del_args args[_num_funcs+1];
+    pthread_t threads[_num_funcs+1];
     for (int i = 1; i <= _num_funcs; ++i) {
         args[i].my_id = i;
         args[i].me = this;
@@ -242,8 +243,8 @@ CuckooHashTablePthread<T>::delete_val(const T val) {
 template <typename T>
 bool
 CuckooHashTablePthread<T>::lookup_val(const T val) {
-    del_args args[_num_funcs];
-    pthread_t threads[_num_funcs];
+    del_args args[_num_funcs+1];
+    pthread_t threads[_num_funcs+1];
     for (int i = 1; i <= _num_funcs; ++i) {
         args[i].my_id = i;
         args[i].me = this;
