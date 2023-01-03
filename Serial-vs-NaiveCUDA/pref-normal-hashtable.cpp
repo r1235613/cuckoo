@@ -23,7 +23,7 @@ gen_rnd_input(uint32_t * const vals, const int n, const uint32_t limit) {
 
 
 int main(){
-    omp_set_dynamic(0);
+    omp_set_dynamic(1);
     int size = 0x1 << 25;
     bool flag;
     HashTableNormalStrip<int> hash_table(size>>1);
@@ -34,7 +34,7 @@ int main(){
     auto te = std::chrono::high_resolution_clock::now();
     std::cout << "Initial time: " << std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count() << "ms. start" << std::endl;
     ts = std::chrono::high_resolution_clock::now();
-#pragma omp parallel for num_threads(12)
+#pragma omp parallel for
     for(int i = 0; i < size; i++){
         hash_table.insert_val(data[i]);
     }
@@ -43,7 +43,7 @@ int main(){
 
     flag = false;
     ts = std::chrono::high_resolution_clock::now();
-#pragma omp parallel for num_threads(12)
+#pragma omp parallel for
     for(int i = 0; i < size; i++){
         if(!hash_table.lookup_val(data[i]))
             flag = true;
