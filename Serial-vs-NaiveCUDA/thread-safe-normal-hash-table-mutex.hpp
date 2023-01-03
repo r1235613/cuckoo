@@ -1,20 +1,19 @@
 //
-// Created by 黃彥儒 on 2023/1/1.
+// Created by 黃彥儒 on 2023/1/3.
 //
 
-#ifndef THREAD_SAFE_NORMAL_HASH_TABLE_HPP
-#define THREAD_SAFE_NORMAL_HASH_TABLE_HPP
+#ifndef CUCKOO_HASHING_CUDA_THREAD_SAFE_NORMAL_GASH_TABLE_MUTEX_HPP
+#define CUCKOO_HASHING_CUDA_THREAD_SAFE_NORMAL_GASH_TABLE_MUTEX_HPP
 
-#include <shared_mutex>
 #include <iostream>
 #include <mutex>
 #include <atomic>
 
 template<typename T>
-class HashTableNormalRwlock{
+class HashTableNormalMutex{
 private:
 
-    mutable std::shared_mutex g_locks;
+    //mutable std::mutex g_locks;
     std::atomic_int32_t counter;
     u_int32_t _size;
     struct node{
@@ -22,7 +21,7 @@ private:
         node *next = nullptr;
     };
     struct hash_unit{
-        mutable std::shared_mutex lock;
+        mutable std::mutex lock;
         node *next = nullptr;
     };
 
@@ -30,11 +29,11 @@ private:
     void rehash();
 
 public:
-    HashTableNormalRwlock(size_t size): _size(size){
+    HashTableNormalMutex(size_t size): _size(size){
         _data = new hash_unit[size]();
         counter = 0;
     }
-    ~HashTableNormalRwlock(){
+    ~HashTableNormalMutex(){
         for(size_t i = 0; i < _size; i++){
             node *cur = _data[i].next;
             while (cur != nullptr){
@@ -52,10 +51,10 @@ public:
     void show_content();
 };
 template <typename T>
-void HashTableNormalRwlock<T>::insert_val(const T val){
+void HashTableNormalMutex<T>::insert_val(const T val){
     uint32_t pos = val % _size;
-    std::shared_lock<std::shared_mutex> lock(g_locks);
-    std::unique_lock<std::shared_mutex> lock2(_data[pos].lock);
+    //std::shared_lock<std::shared_mutex> lock(g_locks);
+    std::lock_guard<std::mutex> lock2(_data[pos].lock);
     node *cur = _data[pos].next;
     while(cur != nullptr){
         if(cur->data == val){
@@ -72,10 +71,10 @@ void HashTableNormalRwlock<T>::insert_val(const T val){
 }
 
 template <typename T>
-bool HashTableNormalRwlock<T>::delete_val(const T val){
+bool HashTableNormalMutex<T>::delete_val(const T val){
     uint32_t pos = val % _size;
-    std::shared_lock<std::shared_mutex> lock(g_locks);
-    std::unique_lock<std::shared_mutex> lock2(_data[pos].lock);
+    //std::lock_guard<std::shared_mutex> lock(g_locks);
+    std::lock_guard<std::mutex> lock2(_data[pos].lock);
     node *cur = _data[pos].next;
     node *prev = nullptr;
     while(cur != nullptr){
@@ -96,10 +95,10 @@ bool HashTableNormalRwlock<T>::delete_val(const T val){
 }
 
 template <typename T>
-bool HashTableNormalRwlock<T>::lookup_val(const T val){
+bool HashTableNormalMutex<T>::lookup_val(const T val){
     uint32_t pos = val % _size;
-    std::shared_lock<std::shared_mutex> lock(g_locks);
-    std::shared_lock<std::shared_mutex> lock2(_data[pos].lock);
+    //std::lock_guard<std::shared_mutex> lock(g_locks);
+    std::lock_guard<std::mutex> lock2(_data[pos].lock);
     node *cur = _data[pos].next;
     while(cur != nullptr){
         if(cur->data == val){
@@ -111,11 +110,11 @@ bool HashTableNormalRwlock<T>::lookup_val(const T val){
 }
 
 template <typename T>
-void HashTableNormalRwlock<T>::show_content(){
+void HashTableNormalMutex<T>::show_content(){
     for(uint32_t i = 0; i < _size; i++){
         std::cout << "Table " << i << ": ";
-        std::shared_lock<std::shared_mutex> lock(g_locks);
-        std::shared_lock<std::shared_mutex> lock2(_data[i].lock);
+        //std::lock_guard<std::shared_mutex> lock(g_locks);
+        std::lock_guard<std::mutex> lock2(_data[i].lock);
         node *cur = _data[i].next;
         while(cur != nullptr){
             std::cout << cur->data << " ";
@@ -126,16 +125,16 @@ void HashTableNormalRwlock<T>::show_content(){
 }
 
 template <typename T>
-void HashTableNormalRwlock<T>::rehash(){
-    std::unique_lock<std::shared_mutex> lock(g_locks);
+void HashTableNormalMutex<T>::rehash(){
+    //std::lock_guard<std::shared_mutex> lock(g_locks);
     uint32_t new_size = _size * 2;
     hash_unit *new_data = new hash_unit[new_size]();
     for(uint32_t i = 0; i < _size; i++){
-        std::unique_lock<std::shared_mutex> lock3(_data[i].lock);
+        std::lock_guard<std::mutex> lock2(_data[i].lock);
         node *cur = _data[i].next;
         while(cur != nullptr){
             int pos = cur->data % new_size;
-            std::unique_lock<std::shared_mutex> lock4(new_data[pos].lock);
+            std::lock_guard<std::mutex> lock3(new_data[pos].lock);
             node *new_node = new node();
             new_node->data = cur->data;
             new_node->next = new_data[pos].next;
@@ -148,4 +147,4 @@ void HashTableNormalRwlock<T>::rehash(){
     _size = new_size;
 }
 
-#endif //THREAD_SAFE_NORMAL_HASH_TABLE_HPP
+#endif //CUCKOO_HASHING_CUDA_THREAD_SAFE_NORMAL_GASH_TABLE_MUTEX_HPP
