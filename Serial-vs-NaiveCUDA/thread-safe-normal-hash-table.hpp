@@ -8,14 +8,14 @@
 #include <shared_mutex>
 #include <iostream>
 #include <mutex>
+#include <atomic>
 
 template<typename T>
 class HashTableNormalStrip{
 private:
 
     mutable std::shared_mutex g_locks;
-    mutable std::shared_mutex counter_lock;
-    long counter = 0;
+    std::atomic_int32_t counter;
     u_int32_t _size;
     struct node{
         T data;
@@ -32,6 +32,7 @@ private:
 public:
     HashTableNormalStrip(size_t size): _size(size){
         _data = new hash_unit[size]();
+        counter = 0;
     }
     ~HashTableNormalStrip(){
         delete[] _data;
@@ -45,8 +46,7 @@ template <typename T>
 void HashTableNormalStrip<T>::insert_val(const T val){
     uint32_t pos = val % _size;
     std::unique_lock<std::shared_mutex> lock(g_locks);
-    std::unique_lock<std::shared_mutex> lock2(counter_lock);
-    std::unique_lock<std::shared_mutex> lock3(_data[pos].lock);
+    std::unique_lock<std::shared_mutex> lock2(_data[pos].lock);
     node *cur = _data[pos].next;
     while(cur != nullptr){
         if(cur->data == val){
@@ -67,7 +67,6 @@ bool HashTableNormalStrip<T>::delete_val(const T val){
     uint32_t pos = val % _size;
     std::unique_lock<std::shared_mutex> lock(g_locks);
     std::unique_lock<std::shared_mutex> lock2(_data[pos].lock);
-    std::unique_lock<std::shared_mutex> lock3(counter_lock);
     node *cur = _data[pos].next;
     node *prev = nullptr;
     while(cur != nullptr){
@@ -120,8 +119,6 @@ void HashTableNormalStrip<T>::show_content(){
 template <typename T>
 void HashTableNormalStrip<T>::rehash(){
     std::unique_lock<std::shared_mutex> lock(g_locks);
-    std::unique_lock<std::shared_mutex> lock2(counter_lock);
-    std::
     uint32_t new_size = _size * 2;
     hash_unit *new_data = new hash_unit[new_size]();
     for(uint32_t i = 0; i < _size; i++){
