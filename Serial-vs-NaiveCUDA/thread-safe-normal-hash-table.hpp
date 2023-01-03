@@ -45,7 +45,7 @@ public:
 template <typename T>
 void HashTableNormalStrip<T>::insert_val(const T val){
     uint32_t pos = val % _size;
-    std::unique_lock<std::shared_mutex> lock(g_locks);
+    std::shared_lock<std::shared_mutex> lock(g_locks);
     std::unique_lock<std::shared_mutex> lock2(_data[pos].lock);
     node *cur = _data[pos].next;
     while(cur != nullptr){
@@ -65,7 +65,7 @@ void HashTableNormalStrip<T>::insert_val(const T val){
 template <typename T>
 bool HashTableNormalStrip<T>::delete_val(const T val){
     uint32_t pos = val % _size;
-    std::unique_lock<std::shared_mutex> lock(g_locks);
+    std::shared_lock<std::shared_mutex> lock(g_locks);
     std::unique_lock<std::shared_mutex> lock2(_data[pos].lock);
     node *cur = _data[pos].next;
     node *prev = nullptr;
