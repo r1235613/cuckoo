@@ -60,58 +60,42 @@ gen_rnd_input_op(command * const vals, const int n, const uint32_t limit, int re
 
 
 
-int main(){
+int main(int argc, char** argv){
     omp_set_dynamic(0);
-    int size = 10000000;
+    int size = atoi(argv[1]) * 1000000;
     bool flag;
     size_t exp_thread[] = {1,2,4,6,8,16,24};
     auto ts = std::chrono::high_resolution_clock::now();
     command *data = new command [size];
     gen_rnd_input_op(data, size, RAND_MAX, 0);
-    command *test = new command [size/10];
-    gen_rnd_input_op(test, size/10, RAND_MAX, 6);
     auto te = std::chrono::high_resolution_clock::now();
     //std::cout << " 30w 70r Initial time: " << std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count() << "ms. start" << std::endl;
 
 
-    HashTableNormalStripMutex<uint32_t> hash_table(2*size);
+    HashTableNormalRwlockBig<uint32_t> hash_table(2*size);
 
-    omp_set_num_threads(24);
-#pragma omp parallel for
-    for(int i = 0; i < size; i++){
-        hash_table.insert_val(data[i].val);
-    }
+
 
     for(size_t exp_idx = 0; exp_idx < sizeof(exp_thread)/sizeof(size_t); exp_idx++){
         size_t thread_num = exp_thread[exp_idx];
         omp_set_num_threads(thread_num);
 
-
+//atoi(argv[1])
 #pragma omp parallel for
         for(int i = 0; i < size; i++){
-            hash_table.insert_val(data[i].val);
+            hash_table.lookup_val(data[i].val);
         }
 
 
         ts = std::chrono::high_resolution_clock::now();
 #pragma omp parallel for
-        for(int i = 0; i < 1000000; i++){
-            if(test[i].op == Operate::QUERY) {
-                hash_table.lookup_val(test[i].val);
-            }else if(test[i].op == Operate::INSERT) {
-                hash_table.insert_val(test[i].val);
-            }
+        for(int i = 0; i < size; i++){
+            hash_table.delete_val(data[i].val);
         }
         te = std::chrono::high_resolution_clock::now();
         auto command_time = std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count();
 
         std::cout << "time thread:\t" << command_time << "\t" << thread_num << std::endl;
-#pragma omp parallel for
-        for(int i = 0; i < 1000000; i++){
-            if(test[i].op == Operate::INSERT) {
-                hash_table.delete_val(test[i].val);
-            }
-        }
     }
 
 
@@ -172,8 +156,7 @@ int main(){
 
 
     delete[] data;
-    delete[] test;
-
+    std::cout << "===============" << std::endl;
 
 
 }

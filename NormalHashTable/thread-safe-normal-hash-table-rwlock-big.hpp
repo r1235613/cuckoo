@@ -2,9 +2,6 @@
 // Created by 黃彥儒 on 2023/1/3.
 //
 
-#ifndef CUCKOO_HASHING_CUDA_THREAD_SAFE_NORMAL_GASH_TABLE_MUTEX_HPP
-#define CUCKOO_HASHING_CUDA_THREAD_SAFE_NORMAL_GASH_TABLE_MUTEX_HPP
-
 #include <iostream>
 #include <mutex>
 #include <atomic>
@@ -145,4 +142,3 @@ void HashTableNormalRwlockBig<T>::rehash(){
     _size = new_size;
 }
 
-#endif //CUCKOO_HASHING_CUDA_THREAD_SAFE_NORMAL_GASH_TABLE_MUTEX_HPP
