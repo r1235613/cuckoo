@@ -55,7 +55,7 @@ template <typename T>
 void HashTableNormalRwlock<T>::insert_val(const T val){
     uint32_t pos = val % _size;
     std::shared_lock<std::shared_mutex> lock(g_locks);
-    std::unique_lock<std::shared_mutex> lock2(_data[pos].lock);
+    std::shared_lock<std::shared_mutex> lock1(_data[pos].lock);
     node *cur = _data[pos].next;
     while(cur != nullptr){
         if(cur->data == val){
@@ -63,6 +63,8 @@ void HashTableNormalRwlock<T>::insert_val(const T val){
         }
         cur = cur->next;
     }
+    lock1.unlock();
+    std::unique_lock<std::shared_mutex> lock2(_data[pos].lock);
     node *new_node = new node();
     new_node->data = val;
     new_node->next = _data[pos].next;
