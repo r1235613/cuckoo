@@ -8,6 +8,17 @@
 #include <omp.h>
 #include <map>
 
+enum class Operate{
+    INSERT,
+    QUERY,
+    DELETE
+};
+
+struct command{
+    Operate op,
+    uint32_t val
+};
+
 static void
 gen_rnd_input(uint32_t * const vals, const int n, const uint32_t limit) {
     std::map<uint32_t, bool> val_map;
@@ -35,49 +46,55 @@ int main(){
     std::cout << "Initial time: " << std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count() << "ms. start" << std::endl;
 
     std::cout << "Rwlock" << std::endl;
-    for(int core = 24; core >=1; core++){
-        HashTableNormalRwlock<int> hash_table_rwlock(size>>1);
-        omp_set_num_threads(core);
-        int thread_total;
-        ts = std::chrono::high_resolution_clock::now();
+    for(int shift = 23; shift >=27; shift++){
+        for(int core = 24; core >=1; core--){
+            HashTableNormalRwlock<int> hash_table_rwlock(0x1<<shift);
+            omp_set_num_threads(core);
+            int thread_total;
+            ts = std::chrono::high_resolution_clock::now();
 #pragma omp parallel for
-        for(int i = 0; i < size; i++){
-            hash_table_rwlock.insert_val(data[i]);
-            thread_total = omp_get_num_threads();
-        }
-        te = std::chrono::high_resolution_clock::now();
-        auto time_1s = std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count();
-        ts = std::chrono::high_resolution_clock::now();
+            for(int i = 0; i < size; i++){
+                hash_table_rwlock.insert_val(data[i]);
+                thread_total = omp_get_num_threads();
+            }
+            te = std::chrono::high_resolution_clock::now();
+            auto time_1s = std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count();
+            ts = std::chrono::high_resolution_clock::now();
 #pragma omp parallel for
-        for(int i = 0; i < size; i++){
-            hash_table_rwlock.lookup_val(data[i]);
-            thread_total = omp_get_num_threads();
+            for(int i = 0; i < size; i++){
+                hash_table_rwlock.lookup_val(data[i]);
+                thread_total = omp_get_num_threads();
+            }
+            te = std::chrono::high_resolution_clock::now();
+            std::cout  << thread_total << " Threads, shift " << shift << ", time: " << time_1s << "ms, " << std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count() << "ms" << std::endl;
         }
-        te = std::chrono::high_resolution_clock::now();
-        std::cout  << thread_total << "Threads " << "time: " << time_1s << "ms, " << std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count() << "ms" << std::endl;
     }
 
+
     std::cout << "Mutex" << std::endl;
-    for(int core = 24; core >=1; core++){
-        HashTableNormalMutex<int> hash_table_mutex(size>>1);
-        omp_set_num_threads(core);
-        int thread_total;
-        ts = std::chrono::high_resolution_clock::now();
+    for(int shift = 23; shift <=27; shift++){
+        for(int core = 24; core >=1; core--){
+            HashTableNormalMutex<int> hash_table_mutex(0x1<<shift);
+            omp_set_num_threads(core);
+            int thread_total;
+            ts = std::chrono::high_resolution_clock::now();
 #pragma omp parallel for
-        for(int i = 0; i < size; i++){
-            hash_table_mutex.insert_val(data[i]);
-            thread_total = omp_get_num_threads();
-        }
-        te = std::chrono::high_resolution_clock::now();
-        auto time_1s = std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count();
-        ts = std::chrono::high_resolution_clock::now();
+            for(int i = 0; i < size; i++){
+                hash_table_mutex.insert_val(data[i]);
+                thread_total = omp_get_num_threads();
+            }
+            te = std::chrono::high_resolution_clock::now();
+            auto time_1s = std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count();
+            ts = std::chrono::high_resolution_clock::now();
 #pragma omp parallel for
-        for(int i = 0; i < size; i++){
-            hash_table_mutex.lookup_val(data[i]);
+            for(int i = 0; i < size; i++){
+                hash_table_mutex.lookup_val(data[i]);
+            }
+            te = std::chrono::high_resolution_clock::now();
+            std::cout  << thread_total << " Threads, shift " << shift << ", time: " << time_1s << "ms, " << std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count() << "ms" << std::endl;
         }
-        te = std::chrono::high_resolution_clock::now();
-        std::cout  << thread_total << "Threads " << "time: " << time_1s  << "ms, "  << std::chrono::duration_cast<std::chrono::milliseconds>(te - ts).count() << "ms" << std::endl;
     }
+
 
     delete[] data;
 
