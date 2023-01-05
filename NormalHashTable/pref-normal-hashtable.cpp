@@ -62,8 +62,7 @@ gen_rnd_input_op(command * const vals, const int n, const uint32_t limit, int re
 
 int main(int argc, char** argv){
     omp_set_dynamic(0);
-    int size = atoi(argv[1]) * 1000000;
-    bool flag;
+    int size = 10000000;
     size_t exp_thread[] = {1,2,4,6,8,16,24};
     auto ts = std::chrono::high_resolution_clock::now();
     command *data = new command [size];

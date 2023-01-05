@@ -103,7 +103,7 @@ bool HashTableNormalStripMutex<T>::delete_val(const T val){
 template <typename T>
 bool HashTableNormalStripMutex<T>::lookup_val(const T val){
     uint32_t pos = val % _size;
-    std::lock_guard<std::mutex> lock1(g_locks[pos % _lock_size]);
+    //std::lock_guard<std::mutex> lock1(g_locks[pos % _lock_size]);
     node *cur = _data[pos].next;
     while(cur != nullptr){
         if(cur->data == val){

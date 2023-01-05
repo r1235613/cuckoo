@@ -96,7 +96,7 @@ template <typename T>
 bool HashTableNormalMutexBig<T>::lookup_val(const T val){
     uint32_t pos = val % _size;
     //std::lock_guard<std::shared_mutex> lock(g_locks);
-    std::lock_guard<std::mutex> lock2(g_locks);
+    //std::lock_guard<std::mutex> lock2(g_locks);
     node *cur = _data[pos].next;
     while(cur != nullptr){
         if(cur->data == val){
